@@ -3,7 +3,7 @@ var dog;
 var happyDog;
 var normDog;
 var databaase;
-var foodS;
+var foodS = 0;
 var foodStock;
 
 function preload()
@@ -39,7 +39,9 @@ function draw() {
   //add styles here
   textSize(30);
   fill("navy")
-  text(foodS, 200, 100)
+  text("Food remaining: " + foodS, 185, 200)
+  textSize(15);
+  text("Note: Press UP ARROW KEY to feed the pet milk!", 160, 20)
 }
 
 function readStock(data){
